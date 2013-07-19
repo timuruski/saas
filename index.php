@@ -15,16 +15,18 @@ $random_term = $terms['terms'][rand(0, count($terms['terms']))];
     <style type="text/css">
       body {
         font-family: 'Fauna One', serif;
-        font-size: 50px; text-align: center;
+        font-size: 70px; text-align: center;
       }
 
       p { margin-top: 100px; }
+      p.github { font-size: 12px; margin-top: 50px; }
+      p u { text-decoration: none; border-bottom: 1px solid #000;  }
     </style>
   </head>
   <body>
     <p>
       <u><strong><?= ucfirst( $random_term ) ?></strong></u> as a service.
     </p>
-    <p class="github">Fork me on <a href="http://github.com">Github</a></p>
+    <p class="github">Fork me on <a href="https://github.com/stevedev/saas" target="_blank">Github</a> to add more terms.</p>
   </body>
 </html>
