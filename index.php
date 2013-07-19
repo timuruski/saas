@@ -3,8 +3,8 @@
 require 'spyc.php';
 
 $terms = spyc_load_file('data.yml');
-
-$random_term = $terms['terms'][rand(0, count($terms['terms']))];
+$random_index = rand(0, count($terms['terms']) - 1);
+$random_term = $terms['terms'][$random_index];
 
 ?>
 <!doctype HTML>
